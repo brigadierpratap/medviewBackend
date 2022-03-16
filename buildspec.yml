@@ -1,13 +1,13 @@
-version: 0.1
+version: 0.2
 
-pahses:
+phases:
   build:
     commands:
-      - echo Entered build phase
+      - echo Entered the build phase...
       - mvn clean package
   post_build:
     commands:
-      - echo Build success
+      - echo Build completed successfully
 artifacts:
   files:
     - target/medview-app.jar
