@@ -10,5 +10,5 @@ pahses:
       - echo Build success
 artifacts:
   files:
-    - target/medview.jar
+    - target/medview-app.jar
   discard-paths: yes
