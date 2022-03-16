@@ -1,0 +1,14 @@
+version:0.1
+
+pahses:
+  build:
+    commands:
+      - echo Entered build phase
+      - mvn clean package
+  post_build:
+    commands:
+      - echo Build success
+artifacts:
+  files:
+    - target/medview.jar
+  discard-paths: yes
