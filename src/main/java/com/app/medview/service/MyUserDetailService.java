@@ -24,7 +24,7 @@ public class MyUserDetailService implements UserDetailsService {
 
         Optional<Patient> patient = Optional.ofNullable(patientRepository.getPatientByPhoneNum(userName));
         if (patient.isEmpty()){
-            log.warn("here");
+
             throw new UsernameNotFoundException("User not found");
         }
         else{
